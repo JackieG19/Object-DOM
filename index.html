@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h1>Hotel Name</h1>
+<p id="hotelname"></p>
+
+<h3>Total Rooms</h3>
+<p id="rooms"></p>
+
+<h3>Room Available</h3>
+<p id="avil"></p>
+
+<h3>Rooms Booked</h3>
+<p id="booked"></p>
+
+<button type="button" onclick="myHotel()">click</button>
+
+</body>
+
+<script>
+
+var hotel = { 
+    name: 'Biltmore',
+    rooms: 500,
+    roomsBooked: 150,
+    roomsAvailable: 350,
+    roomService: 'yes',
+    pool: 'yes',
+    gym: 'yes',
+  }
+
+    function myHotel() {
+        document.getElementById("hotelname").innerHTML = hotel.name;
+        document.getElementById("rooms").innerHTML = hotel.rooms;
+        document.getElementById("avil").innerHTML = hotel.roomsAvailable;
+        document.getElementById("booked").innerHTML = hotel.roomsBooked;
+    }
+    
+    
+</script>
+
+</html>
